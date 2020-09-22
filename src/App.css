@@ -1,0 +1,80 @@
+.App {
+    float: right;
+    /* background-color:blue; */
+    margin-top: 20vh;
+    margin-right: 10vh;
+}
+
+.paragraph {
+    text-align: left;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 220px;
+    margin-bottom: -10px;
+}
+
+.dot {
+    height: 32px;
+    width: 32px;
+    background-color: #43C6DB;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: -26px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(8,8,8);
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  li a:hover {
+    background-color: #A8AAAA;
+  }
+
+.back {
+    position: fixed;
+    opacity: 0.05;
+}
+
+.backTextUp{
+    color: #A8AAAA;
+    /* background-color: wheat; */
+    font-size: 430px;
+    margin-top: -155px;
+    margin-bottom: -100px;
+    /* overflow-wrap:break-word; */
+}
+
+
+.backTextDown{
+    color: #A8AAAA;
+    /* background-color: wheat; */
+    font-size: 500px;
+    margin-top: -250px;
+    margin-bottom: -100px;
+    /* overflow-wrap:break-word; */
+}
+
+.cursor {
+    color: aquamarine;
+}
+
+.paradiv {
+    margin-top: -80px;
+    margin-left: auto;
+}
