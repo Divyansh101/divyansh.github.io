@@ -39,11 +39,20 @@ ul {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    margin-top: 8px;
+    font-family: 'product-sans';
+    font-weight: 600;
+    margin-left: 10px;
+    margin-right: 10px;
   }
-  
-  li a:hover {
-    background-color: #A8AAAA;
+  li div {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 20px;
   }
 
 .back {
@@ -55,8 +64,9 @@ ul {
     color: #A8AAAA;
     /* background-color: wheat; */
     font-size: 430px;
-    margin-top: -155px;
-    margin-bottom: -100px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
     /* overflow-wrap:break-word; */
 }
 
@@ -77,4 +87,10 @@ ul {
 .paradiv {
     margin-top: -80px;
     margin-left: auto;
+}
+
+img {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
 }
