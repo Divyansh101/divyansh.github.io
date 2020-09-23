@@ -3,7 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-// import 
+import './fonts/ps-b.ttf';
+import './fonts/me-r.otf';
+import './fonts/me-ub.otf';
+
+
 ReactDOM.render(
   <React.StrictMode>
     <App style = {{backgroundColor: 'black'}}/>

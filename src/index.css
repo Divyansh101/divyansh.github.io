@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'product-sans';
+  src: local('product-sans'), url(./fonts/ps-b.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'me-r';
+  src: local('me-r'), url(./fonts/me-r.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'me-ub';
+  src: local('me-ub'), url(./fonts/me-ub.otf) format('truetype');
+}
