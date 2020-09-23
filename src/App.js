@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-
+import cr from './imgs/circle-red.png';
+import cb from './imgs/shape-1.png';
 class App extends Component  {
 
 
@@ -10,13 +11,6 @@ class App extends Component  {
 
 	render() {
 
-		// let button = null;	
-		// if(this.state.typed) {
-		// 	button = (<span className = "dot"></span>)
-		// } else {
-		// 	button = null;
-		// }
-
 		return (
 
 			<div className = "main">
@@ -25,7 +19,7 @@ class App extends Component  {
 					<p className = "backTextDown">LOP</p>
 				</div>
 				<div className = "greet">
-					<p className = "paragraph">Hello<br />I am<br /><div className = "name">Divyansh</div></p>
+					<p className = "paragraph">Hello <span className = "image-cr" ><img src = {cr}/></span><br />I am<br /><div className = "name">Divyansh </div></p>
 				</div>
 				<div className = "pointsOuter">
 					<p className = "points">
@@ -36,10 +30,12 @@ class App extends Component  {
 				</div>
 				<div className = "reachOuter">
 					<p className = "reach">
-						<div>MAIL<span className = "tab"></span>NUMBER<span className = "tab"></span>FACEBOOK<span className = "tab"></span>LINKEDIN</div>
+						<div>MAIL<span className = "tab"></span>PHONE<span className = "tab"></span>FACEBOOK<span className = "tab"></span>LINKEDIN</div>
 					</p>
 				</div>
-
+				<div>
+					<img className = "image-cb" src = {cb}/>
+				</div>
 			</div>
 		);
 	}

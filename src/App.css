@@ -1,12 +1,12 @@
 .main {
-    margin-top: -45vh;
+    margin-top: -44vh;
 }
 
 .paragraph {
     color: #ffffff;
     font-family: 'product-sans';
     font-size: 145px;
-    margin-top: 32vh;
+    margin-top: 45vh;
     text-align: left;
     line-height: 160px;
     width: fit-content;
@@ -14,6 +14,7 @@
     /* border: 3px solid black; */
     float: right;
     /* border: 3px solid black; */
+    
 }
 
 .greet { 
@@ -29,6 +30,26 @@
     /* border: 3px solid black; */
     margin-left: -26px;
 
+}
+
+.image-cr {
+    /* border: 3px solid black;  */
+    margin-left: -15vh;
+    margin-top: 4.5vh;
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+    
+}
+
+.image-cb {
+    /* border: 3px solid black;  */
+    margin-left: 10vh;
+    margin-top: -60vh;
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+    
 }
 
 /* .back {
@@ -71,7 +92,7 @@
 }
 
 .name {
-    color: #FF5252;
+    color: #0097A7;
 }
 
 .points {
@@ -106,12 +127,14 @@
     height: fit-content;
     transform: rotate(180deg);
     /* border: 3px solid black; */
-    margin-top: -170vh;
+    margin-top: -180vh;
     text-align: right;
+    margin-right: 4vh;
 }
 
 .tab { 
     margin-top: 40px; 
+
 } 
 
 .reachOuter {
@@ -123,10 +146,4 @@
     float: right; 
     padding-top: 80vh
 
-}
-
-img {
-    height: 32px;
-    width: 32px;
-    border-radius: 50%;
 }
