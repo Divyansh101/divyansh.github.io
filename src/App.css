@@ -1,3 +1,30 @@
+.intro {   
+    /* text-align: center; */
+    color: #ffffff;         
+    font-family: 'me-r';
+    font-size: 30px;
+    /* margin-top: 45vh; */
+    /* border: 3px solid black; */
+    height: 100vh;
+    /* background: green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro1 {   
+    /* text-align: center; */
+    color: #ffffff;         
+    font-family: 'me-r';
+    font-size: 30px;
+    /* margin-top: 45vh; */
+    /* border: 3px solid black; */
+    margin-top: -50vh;
+    /* background: green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .main {
     margin-top: -44vh;
 }
@@ -182,7 +209,7 @@
     /* border: 3px solid black; */
     margin-top: -180vh;
     text-align: right;
-    margin-right: 4vh;
+    margin-right: 2vh;
 }
 
 .tab { 
