@@ -17,6 +17,17 @@
     
 }
 
+
+.name-outline {
+    font-family: 'product-sans';
+    font-size: 145px;
+    position: absolute;
+    margin-top: -4.8vh;
+    margin-left: 87.2vh;
+    line-height: 160px;
+    color: #0097A7;
+}
+
 .greet { 
     margin: 32vh;
 }
@@ -46,6 +57,16 @@
     /* border: 3px solid black;  */
     margin-left: 10vh;
     margin-top: -60vh;
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+    
+}
+
+.image-cp {
+    /* border: 3px solid black;  */
+    margin-left: -10vh;
+    margin-top: 80vh;
     position: absolute;
     height: fit-content;
     width: fit-content;
@@ -92,7 +113,8 @@
 }
 
 .name {
-    color: #0097A7;
+    color: #00565F;
+
 }
 
 .points {
