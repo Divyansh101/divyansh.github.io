@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.410f0182.chunk.css",
-    "main.js": "/static/js/main.9cdb10d0.chunk.js",
-    "main.js.map": "/static/js/main.9cdb10d0.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.19ccc7f6.js",
-    "runtime-main.js.map": "/static/js/runtime-main.19ccc7f6.js.map",
-    "static/js/2.810cedcc.chunk.js": "/static/js/2.810cedcc.chunk.js",
-    "static/js/2.810cedcc.chunk.js.map": "/static/js/2.810cedcc.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.eb382cf1129f4d693aa20b32abdc8e4f.js": "/precache-manifest.eb382cf1129f4d693aa20b32abdc8e4f.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.410f0182.chunk.css.map": "/static/css/main.410f0182.chunk.css.map",
-    "static/js/2.810cedcc.chunk.js.LICENSE.txt": "/static/js/2.810cedcc.chunk.js.LICENSE.txt",
-    "static/media/me-r.otf": "/static/media/me-r.73b9994b.otf",
-    "static/media/me-ub.otf": "/static/media/me-ub.3b240783.otf",
-    "static/media/ps-b.ttf": "/static/media/ps-b.dba0c688.ttf"
+    "main.css": "/divyansh101.github.io/static/css/main.6165e100.chunk.css",
+    "main.js": "/divyansh101.github.io/static/js/main.b0736dee.chunk.js",
+    "main.js.map": "/divyansh101.github.io/static/js/main.b0736dee.chunk.js.map",
+    "runtime-main.js": "/divyansh101.github.io/static/js/runtime-main.defaf09e.js",
+    "runtime-main.js.map": "/divyansh101.github.io/static/js/runtime-main.defaf09e.js.map",
+    "static/js/2.810cedcc.chunk.js": "/divyansh101.github.io/static/js/2.810cedcc.chunk.js",
+    "static/js/2.810cedcc.chunk.js.map": "/divyansh101.github.io/static/js/2.810cedcc.chunk.js.map",
+    "index.html": "/divyansh101.github.io/index.html",
+    "precache-manifest.380bf75bc6188ea025feac65fd31cddb.js": "/divyansh101.github.io/precache-manifest.380bf75bc6188ea025feac65fd31cddb.js",
+    "service-worker.js": "/divyansh101.github.io/service-worker.js",
+    "static/css/main.6165e100.chunk.css.map": "/divyansh101.github.io/static/css/main.6165e100.chunk.css.map",
+    "static/js/2.810cedcc.chunk.js.LICENSE.txt": "/divyansh101.github.io/static/js/2.810cedcc.chunk.js.LICENSE.txt",
+    "static/media/me-r.otf": "/divyansh101.github.io/static/media/me-r.73b9994b.otf",
+    "static/media/me-ub.otf": "/divyansh101.github.io/static/media/me-ub.3b240783.otf",
+    "static/media/ps-b.ttf": "/divyansh101.github.io/static/media/ps-b.dba0c688.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.19ccc7f6.js",
+    "static/js/runtime-main.defaf09e.js",
     "static/js/2.810cedcc.chunk.js",
-    "static/css/main.410f0182.chunk.css",
-    "static/js/main.9cdb10d0.chunk.js"
+    "static/css/main.6165e100.chunk.css",
+    "static/js/main.b0736dee.chunk.js"
   ]
 }
