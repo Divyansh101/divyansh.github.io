@@ -207,9 +207,10 @@
     height: fit-content;
     transform: rotate(180deg);
     /* border: 3px solid black; */
-    margin-top: -180vh;
+    margin-top: -142vh;
     text-align: right;
-    margin-right: 2vh;
+    position: absolute;
+    z-index: 50;
 }
 
 .tab { 
@@ -220,7 +221,8 @@
 .reachOuter {
     
     /* border: 3px solid black; */
-    margin-left: 140vh;
+    margin-left: 187vh;
+    position: absolute;
     width: fit-content;
     height: fit-content;
     float: right; 

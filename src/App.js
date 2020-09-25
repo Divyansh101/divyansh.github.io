@@ -15,10 +15,58 @@ class App extends Component  {
 
 
 	state = {
-		intro : true
+		intro : true,
+		mail : false,
+		phone: false,
+		facebook: false,
+		linkedin: false,
+		mailMain: "MAIL",
+		mailValue: "MAIL",
+		view: "VIEW",
+		mailSecondValue: "khatri.divyansh98@gmail.com",
+		phoneMain: "PHONE",
+		phoneValue: "PHONE",
+		phoneSecondValue: "+917839774275",
+		facebookMain: "FACEBOOK",
+		facebookValue: "FACEBOOK",
+		facebookSecondValue: "https://www.facebook.com/divyansh43/",
+		linkedinMain: "LINKEDIN",
+		linkedinValue: "LINKEDIN",
+		linkedinSecondValue: "https://www.linkedin.com/in/divyansh-khatri",
+
+	}
+
+	onClickFacebook = () => {
+		console.log("Facebook");
+		if(!this.state.facebook){
+			this.setState({facebook: true});
+			let view = this.state.facebookSecondValue;
+			this.setState({faceBookMain: view});
+			console.log(this.state.facebookMain);
+		}
+	}	
+		
+	onClickLinkedin = () => {
+		this.setState({linkedin: true});
+		console.log("Linked In");
+	}
+	
+	
+	onClickMail = () => {
+		
+		this.setState({mail: true});
+		console.log("Mail");
+		// this.set
+	}
+	
+	
+	onClickPhone = () => {
+		this.setState({phone: true});
+		console.log("Phone");
 	}
 
 	render() {
+
 		
 		let intro = null;
 		if(this.state.intro) {
@@ -53,13 +101,21 @@ class App extends Component  {
 					<div className = "pointsOuter">
 						<div className = "points">
 							<div>Designer</div>
-							<div> App Deveoper</div>
+							<div>App Deveoper</div>
 							<div>Full-stack Web Developer</div>	
 						</div>
 					</div>
 					<div className = "reachOuter">
 						<div className = "reach">
-							<p>MAIL<span className = "tab"></span>PHONE<span className = "tab"></span>FACEBOOK<span className = "tab"></span>LINKEDIN</p>
+							<p>
+								<span onClick = {this.onClickMail}>{this.state.mailMain}</span>
+								<span className = "tab"></span>
+								<span onClick = {this.onClickPhone}>{this.state.phoneMain}</span>
+								<span className = "tab"></span>
+								<span onClick = {this.onClickFacebook}>{this.state.facebookMain}</span>
+								<span className = "tab"></span>
+								<span onClick = {this.onClickLinkedin}>{this.state.linkedin === false ? this.state.linkedinValue : this.state.linkedinSecondValue}</span>
+							</p>
 						</div>
 					</div>
 					<div>
