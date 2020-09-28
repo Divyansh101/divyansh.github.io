@@ -1,231 +1,150 @@
 .intro {   
-    /* text-align: center; */
     color: #ffffff;         
     font-family: 'me-r';
     font-size: 30px;
-    /* margin-top: 45vh; */
-    /* border: 3px solid black; */
     height: 100vh;
-    /* background: green; */
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 20px solid orange;
 }
 
 .intro1 {   
-    /* text-align: center; */
     color: #ffffff;         
     font-family: 'me-r';
     font-size: 30px;
-    /* margin-top: 45vh; */
-    /* border: 3px solid black; */
     margin-top: -50vh;
-    /* background: green; */
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.main {
-    margin-top: -44vh;
 }
 
 .paragraph {
     color: #ffffff;
     font-family: 'product-sans';
-    font-size: 145px;
-    margin-top: 45vh;
-    text-align: left;
-    line-height: 160px;
-    width: fit-content;
-    height: fit-content;
-    /* border: 3px solid black; */
-    float: right;
-    /* border: 3px solid black; */
-    
+    margin: 0;
+    /* line-height: 160px;     */
+    /* border: 3px solid orange; */
+    width: 82vw;
+    padding-top: 0;
+    height: 115vh; 
+    position: relative;
 }
 
-
-.name-outline {
-    font-family: 'product-sans';
-    font-size: 145px;
+.back {
     position: absolute;
-    margin-top: -4.8vh;
-    margin-left: 87.2vh;
-    line-height: 160px;
-    color: #0097A7;
+    z-index: -5;
+    margin: 0;
+    /* border: 3px solid#0097A7; */
 }
 
-.greet { 
-    margin: 32vh;
-}
-
-.dot {
-    height: 32px;
-    width: 32px;
-    background-color: #0097A7;
-    border-radius: 50%;
-    display: inline-block;
-    /* border: 3px solid black; */
-    margin-left: -26px;
-
-}
-
-.image-cr {
-    /* border: 3px solid black;  */
-    margin-left: -15vh;
-    margin-top: 4.5vh;
+.out-para {
     position: absolute;
-    height: fit-content;
-    width: fit-content;
-    
+    /* width: fit-content; */
+    /* height: fit-content; */
+    width: 98vw;
+    height: 40vh;
+    margin: 0;
+    /* border: 3px solid#0097A7; */
 }
 
-.image-cb {
-    /* border: 3px solid black;  */
-    margin-left: 10vh;
-    margin-top: -50vh;
-    position: absolute;
-    height: fit-content;
-    width: fit-content;
-    
-}
-.image-clb {
-    /* border: 3px solid black;  */
-    margin-left: 110vh;
-    margin-top: -80vh;
-    position: absolute;
-    height: fit-content;
-    width: fit-content;
-    filter: brightness(50%)
-}
-
-
-.image-cp {
-    /* border: 3px solid black;  */
-    margin-left: 80vh;
-    margin-top: 50vh;
-    position: absolute;
-    height: fit-content;
-    width: fit-content;
-}
-
-
-.image-tr {
-    /* border: 3px solid black;  */
-    margin-left: 0vh;
-    margin-top: 20vh;
-    position: absolute;
-    height: fit-content;
-    width: fit-content;
-    transform: rotate(-10deg);
-}
-
-.image-tb {
-    /* border: 3px solid black;  */
-    margin-left: -10vh;
-    margin-top: 101vh;
-    position: absolute;
-    height: fit-content;
-    width: fit-content;
-    transform: rotate(30deg);
-}
-
-
-/* .back {
-
-    opacity: 0.8;
+/* .page-wrap {
+    margin: 0;
 } */
+
+.innerText {
+    position: absolute;
+    font-size: 145px;
+    right: 0;
+    line-height: 160px;
+    bottom: 0;
+    width: fit-content;
+    text-align: left;
+    /* border: 3px solid yellow; */
+}
+
+.backTexts {
+    /* position: relative; */
+    /* border: 2px solid magenta; */
+    z-index: -50;
+    margin: 0;
+} 
 
 .backTextUp{
     color: #1f1f1f;
-    /* background-color: wheat; */
-
-
     font-size: 430px;
-    margin-top: 10vh;
-    margin-left: 3vh;
     font-family: 'me-r';
-    /* overflow-wrap:break-word; */
-    width: fit-content;
-    /* border: 3px solid yellow; */
-    text-align: center;
-    position: absolute;
-    z-index: -1;
+    display: inline-block;
+    margin: 0;
+    width: 98vw;
+    height: 50vh;
+    line-height: 60vh;
+    /* border: 4px solid blue; */
+
+    /* position: relative; */
 }
 
 .backTextDown{
     color: #1f1f1f;
-    /* background-color: wheat; */
-    font-size: 500px;
-    margin-top: 60vh;
-    margin-bottom: -100px;
-    margin-left: 3vh;
-    z-index: -1;
-    position: absolute;
-    /* border: 3px solid yellow; */
-    width: fit-content;
-    height: fit-content;
+    font-size: 480px;
+    margin: 0;
     font-family: 'me-r';
-    /* border: 3px solid black; */
-    /* overflow-wrap:break-word; */
+    width: 98vw;
+    height: 20vw;
+    line-height: 60vh;
+    /* border: 4px solid blue; */
+    /* position: relative; */
 }
 
 .name {
-    color: #00565F;
+    color: #0097A7;
+    /* border: 3px solid brown; */
+}
 
+.image-cr {
+    color: #FF5252;
+    /* border: 2px solid salmon; */
 }
 
 .points {
     font-family: 'me-r';
     color: #A8AAAA;
     writing-mode:vertical-rl;
-    margin-left: 20vh;
-    margin-top: -5vh;
-    width: fit-content;
-    height: fit-content;
     transform: rotate(180deg);
-    /* border: 3px solid black; */
+    position: absolte;
+    /* border: 3px solid yellow; */
     
 }
 
 .pointsOuter {
-    /* border: 3px solid black; */
-    width: fit-content;
-    height: fit-content;
-    padding-top: 58vh;
-    padding-left: 5vh;  ;
+    /* border: 3px solid blue; */
+    position: absolute;
+    right: 70vw;
+    top: 40vh;
+
 }
 
 .reach {
     font-family: 'me-r';
     color: #A8AAAA;
     font-size: 18px;
-    /* text-align: right; */
+    /* width: 20vw; */
     writing-mode:vertical-rl;
-    /* margin-left: 00px; */
-    width: fit-content;
-    height: fit-content;
+    /* border: 3px solid pink; */
     transform: rotate(180deg);
-    /* border: 3px solid black; */
-    margin-top: -142vh;
-    text-align: right;
-    position: absolute;
+    /* text-align: right; */
     z-index: 50;
-}
-
-.tab { 
-    margin-top: 40px; 
-
-} 
-
-.reachOuter {
-    
-    /* border: 3px solid black; */
-    margin-left: 187vh;
     position: absolute;
-    width: fit-content;
-    height: fit-content;
-    float: right; 
-    padding-top: 80vh
-
+    top: 12vh;
+    right: 0;
+    margin-right: -2vw;
 }
+
+.main-content {
+    /* border: 3px solid yellow; */
+    position: relative;
+    width: 95%;
+}
+.tab { 
+    margin-top: 40px;   
+} 

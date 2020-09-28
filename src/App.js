@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import cr from './imgs/circle-red.png';
-import cb from './imgs/shape-1.png';
-import tr from './imgs/triangle-red.png';
-import sp from './imgs/shape-1.png';
-import tb from './imgs/triangle-blue.png';
-import {Spring, Transition} from 'react-spring/renderprops';
+import {Spring, animated} from 'react-spring/renderprops';
+import back from './imgs/abc.png';
 
 class App extends Component  {
 
@@ -15,53 +11,39 @@ class App extends Component  {
 
 
 	state = {
+		show: true,
 		intro : true,
-		mail : false,
-		phone: false,
-		facebook: false,
-		linkedin: false,
-		mailMain: "MAIL",
-		mailValue: "MAIL",
-		view: "VIEW",
 		mailSecondValue: "khatri.divyansh98@gmail.com",
-		phoneMain: "PHONE",
-		phoneValue: "PHONE",
-		phoneSecondValue: "+917839774275",
-		facebookMain: "FACEBOOK",
-		facebookValue: "FACEBOOK",
+		phoneSecondValue: "+917838774275",
 		facebookSecondValue: "https://www.facebook.com/divyansh43/",
-		linkedinMain: "LINKEDIN",
-		linkedinValue: "LINKEDIN",
 		linkedinSecondValue: "https://www.linkedin.com/in/divyansh-khatri",
 
 	}
 
 	onClickFacebook = () => {
+		navigator.clipboard.writeText(this.state.facebookSecondValue);
 		console.log("Facebook");
-		if(!this.state.facebook){
-			this.setState({facebook: true});
-			let view = this.state.facebookSecondValue;
-			this.setState({faceBookMain: view});
-			console.log(this.state.facebookMain);
-		}
+		return (
+			<Spring native from={{opacity: 0}} to={{opacity: 1}}>
+				{props => <animated.div style={props} className = "intro">hello</animated.div>}
+			</Spring>
+		)
 	}	
 		
 	onClickLinkedin = () => {
-		this.setState({linkedin: true});
+		navigator.clipboard.writeText(this.state.linkedinSecondValue);
 		console.log("Linked In");
 	}
 	
 	
 	onClickMail = () => {
-		
-		this.setState({mail: true});
+		navigator.clipboard.writeText(this.state.mailSecondValue);
 		console.log("Mail");
-		// this.set
 	}
 	
 	
 	onClickPhone = () => {
-		this.setState({phone: true});
+		navigator.clipboard.writeText(this.state.phoneSecondValue);
 		console.log("Phone");
 	}
 
@@ -71,7 +53,7 @@ class App extends Component  {
 		let intro = null;
 		if(this.state.intro) {
 				intro = (
-					<div>
+					<div className = "overflow">
 						<Spring
 							from={{ opacity: 0 }}
 							to={{ opacity: 1 }}>
@@ -87,43 +69,38 @@ class App extends Component  {
 				);
 		} else {
 			intro = (
-				<div className = "main">
-					<div className = "back">
-						<p className = "backTextUp">DEVE</p>
-						<p className = "backTextDown">LOP</p>
-					</div>
-					<div className = "greet">
-						<p className = "paragraph">Hello <span className = "image-cr" ><img src = {cr} alt = "cr" /></span><br />I am<br /><span className = "name">Divyansh </span></p>
-						<span className = "image-cp"><img src = {sp} alt = "sp" /></span>
-						<span className = "image-tr"><img src = {tr} alt = "tr" /></span>
-						<span className = "image-tb"><img src = {tb} alt = "tb" /></span>
-					</div>
-					<div className = "pointsOuter">
-						<div className = "points">
-							<div>Designer</div>
-							<div>App Deveoper</div>
-							<div>Full-stack Web Developer</div>	
-						</div>
-					</div>
-					<div className = "reachOuter">
+				<div className = "page-wrap">
+					{/* <img src = {back} className = "back" /> */}
+					<div className = "main-content">
 						<div className = "reach">
 							<p>
-								<span onClick = {this.onClickMail}>{this.state.mailMain}</span>
+								<span onClick = {this.onClickMail}>MAIL</span>
 								<span className = "tab"></span>
-								<span onClick = {this.onClickPhone}>{this.state.phoneMain}</span>
+								<span onClick = {this.onClickPhone}>PHONE</span>
 								<span className = "tab"></span>
-								<span onClick = {this.onClickFacebook}>{this.state.facebookMain}</span>
+								<span onClick = {this.onClickFacebook}>FACEBOOK</span>
 								<span className = "tab"></span>
-								<span onClick = {this.onClickLinkedin}>{this.state.linkedin === false ? this.state.linkedinValue : this.state.linkedinSecondValue}</span>
+								<span onClick = {this.onClickLinkedin}>LINKEDIN</span>
 							</p>
 						</div>
-					</div>
-					<div>
-						<img className = "image-cb" src = {cb} alt = "cb" />
-						<img className = "image-clb" src = {cb} alt = "cb" />
-					</div>
-					<div>
-					<p className ="name-outline">Divyansh</p>
+						<div className = "back">
+							<div className = "backTexts">
+								<p className = "backTextUp">DEVE</p>
+								<p className = "backTextDown">LOP</p>
+							</div>
+						</div>
+						<div className = "pointsOuter">
+							<div className = "points">
+								<div>Designer</div>
+								<div>App Deveoper</div>
+								<div>Full-stack Web Developer</div>	
+							</div>
+						</div>
+						<div className = 'out-para'>
+							<div className = "paragraph">
+								<p className = "innerText" >Hello<span className = "image-cr" >.</span><br />I am<br /><span className = "name">Divyansh </span></p>	
+							</div>
+						</div>
 					</div>
 				</div>
 			)
