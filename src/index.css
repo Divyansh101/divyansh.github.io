@@ -28,6 +28,12 @@ code {
   src: local('product-sans'), url(./fonts/ps-b.ttf) format('truetype');
 }
 
+
+@font-face {
+  font-family: 'alien-sans';
+  src: local('alien-sans'), url(./fonts/al-b.otf) format('opentype');
+}
+
 @font-face {
   font-family: 'me-r';
   src: local('me-r'), url(./fonts/me-r.otf) format('truetype');
