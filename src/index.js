@@ -10,7 +10,7 @@ import './fonts/me-ub.otf';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App style = {{backgroundColor: 'black'}}/>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
