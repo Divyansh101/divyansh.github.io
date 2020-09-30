@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Light.css';
 import {Spring, animated} from 'react-spring/renderprops';
-import back from '../imgs/abc.png';
+import back1 from '../imgs/abc1.png';
 import moon from '../imgs/moon.png';
 import Dark from './Dark';
 
@@ -53,6 +53,7 @@ class Light extends Component  {
 
 	switchColors = () => {
 		// console.log("pressed");
+		localStorage.setItem("theme", true);
 		this.setState({intro1: <Dark />})
 	}
 
@@ -89,13 +90,13 @@ class Light extends Component  {
 						<div style = {props} className="page-wrap">
                             <div className="bg">
                             </div>
-							<img src = {back} className="back" alt = "shapes"/>
+							<img src = {back1} className="back" alt = "shapes" />
 
 							<div className="main-content">
 
-								<img onClick = {this.switchColors} src= {moon} className = "theme"/>
+								<img onClick = {this.switchColors} src= {moon} className = "theme" alt = "theme"/>
 								{/* <button className="button" onClick = {this.onButtonPress}/> */}
-								<div className="made">Made with <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAABFklEQVQ4jcWPvUoDQRRGz927SARbfQUt1T6gAbG0mn7BylbEwgew8B30BcYsgTRWPoAW2giChkhABBEhlUV2dizM/rCJslv5NTNzZ865d+C/I9nGG7OMc2fALhAC14ic/Fz6U6ADJMAVk8mx9PsfucAbs0iS3CGyWmnwPl1XKvVHVDfF2q8AgDTdnwNnYBUGWCNNDwAywUatD5fj/XohCILPxgJ4KwTO2ab9gctcIL3eDd5fNBCcSxzfFhMAhOEhMKgBD1A9yg65QKwdo9oBRn/Ar6juiLXjGcFUMkJ1C3ieA78gsi3WDsvFoPpKrB2i2kbkvlR+ANrS7T7NvP9tVm/MEs7FwAKqe+Wxa8dHUctHUasx2CTfjkJQ1NseBtMAAAAASUVORK5CYII=" /> and React</div>
+								<div className="made">Made with <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAABFklEQVQ4jcWPvUoDQRRGz927SARbfQUt1T6gAbG0mn7BylbEwgew8B30BcYsgTRWPoAW2giChkhABBEhlUV2dizM/rCJslv5NTNzZ865d+C/I9nGG7OMc2fALhAC14ic/Fz6U6ADJMAVk8mx9PsfucAbs0iS3CGyWmnwPl1XKvVHVDfF2q8AgDTdnwNnYBUGWCNNDwAywUatD5fj/XohCILPxgJ4KwTO2ab9gctcIL3eDd5fNBCcSxzfFhMAhOEhMKgBD1A9yg65QKwdo9oBRn/Ar6juiLXjGcFUMkJ1C3ieA78gsi3WDsvFoPpKrB2i2kbkvlR+ANrS7T7NvP9tVm/MEs7FwAKqe+Wxa8dHUctHUasx2CTfjkJQ1NseBtMAAAAASUVORK5CYII=" alt = "love" /> and React</div>
 								<div className="reach-outer">
 								<div className="reach">
 									<p>

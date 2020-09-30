@@ -13,7 +13,7 @@
     font-size: 30px;
     height: 100vh;
     display: flex;
-    top: -8vh;
+    top: -3vh;
     left: 44vw;
     align-items: center;
     justify-content: center;
@@ -87,8 +87,8 @@
 .back {
     position: absolute;
     width: 100vw;
-    opacity: 0.7;   
-    filter: contrast(180%)
+    opacity: 1;   
+    filter: brightness(110%);
     /* border: 3px solid white; */
 }
 
@@ -121,6 +121,7 @@
     position: absolute;
     top: 1.1vh;
     left: 1vw;
+    transform: rotate(-30deg);
 }
 
 .backTextDown{
@@ -156,7 +157,7 @@
 }
 
 .imageCr {
-    color: #FF083B;
+    color: #FF5252;
     /* border: 2px solid salmon; */
 }
 
