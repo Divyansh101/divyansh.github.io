@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import light from './Light.css';
+import './Light.css';
 import {Spring, animated} from 'react-spring/renderprops';
 import back from '../imgs/abc.png';
+import moon from '../imgs/moon.png';
+import Dark from './Dark';
 
 class Light extends Component  {
 
@@ -11,6 +13,7 @@ class Light extends Component  {
 
 
 	state = {
+		intro1: null,
 		show: true,
 		intro : true,
 		mailSecondValue: "khatri.divyansh98@gmail.com",
@@ -48,6 +51,11 @@ class Light extends Component  {
 		console.log("Phone");
 	}
 
+	switchColors = () => {
+		// console.log("pressed");
+		this.setState({intro1: <Dark />})
+	}
+
 	render() {
 
 		
@@ -82,7 +90,10 @@ class Light extends Component  {
                             <div className="bg">
                             </div>
 							<img src = {back} className="back" alt = "shapes"/>
+
 							<div className="main-content">
+
+								<img onClick = {this.switchColors} src= {moon} className = "theme"/>
 								{/* <button className="button" onClick = {this.onButtonPress}/> */}
 								<div className="made">Made with <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAABFklEQVQ4jcWPvUoDQRRGz927SARbfQUt1T6gAbG0mn7BylbEwgew8B30BcYsgTRWPoAW2giChkhABBEhlUV2dizM/rCJslv5NTNzZ865d+C/I9nGG7OMc2fALhAC14ic/Fz6U6ADJMAVk8mx9PsfucAbs0iS3CGyWmnwPl1XKvVHVDfF2q8AgDTdnwNnYBUGWCNNDwAywUatD5fj/XohCILPxgJ4KwTO2ab9gctcIL3eDd5fNBCcSxzfFhMAhOEhMKgBD1A9yg65QKwdo9oBRn/Ar6juiLXjGcFUMkJ1C3ieA78gsi3WDsvFoPpKrB2i2kbkvlR+ANrS7T7NvP9tVm/MEs7FwAKqe+Wxa8dHUctHUasx2CTfjkJQ1NseBtMAAAAASUVORK5CYII=" /> and React</div>
 								<div className="reach-outer">
@@ -127,7 +138,7 @@ class Light extends Component  {
 
 		return (
 			<div>
-				{intro}
+				{this.state.intro1 != null ? this.state.intro1 : intro}
 			</div>
 			
 		);

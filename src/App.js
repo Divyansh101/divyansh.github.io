@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import Light from './mode/Light.js';
 import Dark from './mode/Dark.js';
+import sun from './imgs/sun.png';
+import moon from './imgs/moon.png';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 class App extends React.Component  {
 
-	constructor(props){
-		super(props);
-		this.state = {
-			theme: true	
-		};
+	state = {
+		theme: true
 	}
 
 	componentDidMount = () => {
@@ -25,9 +25,9 @@ class App extends React.Component  {
 		// let toggle = this.state.theme ? <Dark /> : <Light />;
 
 		return (
-			<div>
-				<button onClick = {this.switchColors} className = "button" />
-				{this.state.theme ? <Dark /> : <Light />}
+
+			<div className = "mainDiv">
+				{this.state.theme ? <Dark className = "theme"/> : <Light className = "theme" />}
 			</div>
 			
 		);

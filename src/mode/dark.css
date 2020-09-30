@@ -41,6 +41,12 @@
     /* position: relative; */
 }
 
+.themeD {
+    position: absolute;
+    top: 1vh;
+    left: 1vw;
+}
+
 .outParaD {
     position: absolute;
     /* width: fit-content; */

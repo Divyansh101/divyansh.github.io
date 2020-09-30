@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './dark.css';
 import {Spring} from 'react-spring/renderprops';
 import back from '../imgs/abc.png';
+import sun from '../imgs/sun.png';
+import Light from './Light';
 
 class Dark extends Component  {
 
@@ -13,6 +15,7 @@ class Dark extends Component  {
 	state = {
 		show: true,
 		intro : true,
+		intro1 : null,
 		mailSecondValue: "khatri.divyansh98@gmail.com",
 		phoneSecondValue: "+917838774275",
 		facebookSecondValue: "https://www.facebook.com/divyansh43/",
@@ -43,10 +46,15 @@ class Dark extends Component  {
 		console.log("Phone");
 	}
 
+	switchColors = () => {
+		// console.log("pressed");
+		this.setState({intro1: <Light />})
+	}
+
 	render() {
 
 		
-		let intro = null;
+		let intro = this.state.intro1;
 		if(this.state.intro) {
 				intro = (
 					<div className="overflowD">
@@ -74,6 +82,7 @@ class Dark extends Component  {
                             </div>
 							<img src = {back} className="backD" alt = "shapes"/>
 							<div className="mainContentD">
+							<img onClick = {this.switchColors} src= {sun} className = "themeD"/>
 								<div className="madeD">Made with <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAABFklEQVQ4jcWPvUoDQRRGz927SARbfQUt1T6gAbG0mn7BylbEwgew8B30BcYsgTRWPoAW2giChkhABBEhlUV2dizM/rCJslv5NTNzZ865d+C/I9nGG7OMc2fALhAC14ic/Fz6U6ADJMAVk8mx9PsfucAbs0iS3CGyWmnwPl1XKvVHVDfF2q8AgDTdnwNnYBUGWCNNDwAywUatD5fj/XohCILPxgJ4KwTO2ab9gctcIL3eDd5fNBCcSxzfFhMAhOEhMKgBD1A9yg65QKwdo9oBRn/Ar6juiLXjGcFUMkJ1C3ieA78gsi3WDsvFoPpKrB2i2kbkvlR+ANrS7T7NvP9tVm/MEs7FwAKqe+Wxa8dHUctHUasx2CTfjkJQ1NseBtMAAAAASUVORK5CYII=" /> and React</div>
 								<div className="reachOuterD">
 								<div className="reachD">
@@ -118,7 +127,7 @@ class Dark extends Component  {
 
 		return (
 			<div>
-				{intro}
+				{this.state.intro1 != null ? this.state.intro1 : intro}
 			</div>
 			
 		);
