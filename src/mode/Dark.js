@@ -20,7 +20,7 @@ class Dark extends Component  {
 
 
 	switchColors = () => {
-		localStorage.setItem("theme", false);
+		localStorage.setItem("theme", "false");
 		this.setState({intro1: <Light />})
 	}
 

@@ -9,7 +9,7 @@ class App extends Component  {
 		return (
 
 			<div className = "mainDiv">
-				{localStorage.getItem("appState") ? <Dark /> : <Light />}
+				{localStorage.getItem("theme") == "true" ? <Dark /> : <Light />}
 			</div>
 			
 		);

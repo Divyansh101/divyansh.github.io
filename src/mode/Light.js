@@ -21,7 +21,7 @@ class Light extends Component  {
 
 	switchColors = () => {
 		// console.log("pressed");
-		localStorage.setItem("theme", true);
+		localStorage.setItem("theme", "true");
 		this.setState({intro1: <Dark />})
 	}
 
