@@ -71,6 +71,21 @@
     /* border: 3px solid blue; */
 } 
 
+.aL:link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.aL:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+.aL:visited {
+    text-decoration: none;
+    color: #000000;
+}
+
 .button {
     position: absolute;
     top: 5vh;
@@ -197,7 +212,7 @@
 
 .reach-outer {
     position: absolute;
-    top: 12vh;
+    top: 24vh;
     right: 2vw;
 }
 

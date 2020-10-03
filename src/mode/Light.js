@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Light.css';
-import {Spring, animated} from 'react-spring/renderprops';
+import {Spring} from 'react-spring/renderprops';
 import back1 from '../imgs/abc1.png';
 import moon from '../imgs/moon.png';
 import Dark from './Dark';
@@ -16,39 +16,7 @@ class Light extends Component  {
 		intro1: null,
 		show: true,
 		intro : true,
-		mailSecondValue: "khatri.divyansh98@gmail.com",
-		phoneSecondValue: "+917838774275",
-		facebookSecondValue: "https://www.facebook.com/divyansh43/",
-		linkedinSecondValue: "https://www.linkedin.com/in/divyansh-khatri",
 		bgColor: '#1a1a1a',
-	}
-
-
-	onClickFacebook = () => {
-		navigator.clipboard.writeText(this.state.facebookSecondValue);
-		console.log("Facebook");
-		return (
-			<Spring native from={{opacity: 0}} to={{opacity: 1}}>
-				{props => <animated.div style={props} className="intro">hello</animated.div>}
-			</Spring>
-		)
-	}	
-		
-	onClickLinkedin = () => {
-		navigator.clipboard.writeText(this.state.linkedinSecondValue);
-		console.log("Linked In");
-	}
-	
-	
-	onClickMail = () => {
-		navigator.clipboard.writeText(this.state.mailSecondValue);
-		console.log("Mail");
-	}
-	
-	
-	onClickPhone = () => {
-		navigator.clipboard.writeText(this.state.phoneSecondValue);
-		console.log("Phone");
 	}
 
 	switchColors = () => {
@@ -99,16 +67,14 @@ class Light extends Component  {
 								<div className="made">Made with <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAABFklEQVQ4jcWPvUoDQRRGz927SARbfQUt1T6gAbG0mn7BylbEwgew8B30BcYsgTRWPoAW2giChkhABBEhlUV2dizM/rCJslv5NTNzZ865d+C/I9nGG7OMc2fALhAC14ic/Fz6U6ADJMAVk8mx9PsfucAbs0iS3CGyWmnwPl1XKvVHVDfF2q8AgDTdnwNnYBUGWCNNDwAywUatD5fj/XohCILPxgJ4KwTO2ab9gctcIL3eDd5fNBCcSxzfFhMAhOEhMKgBD1A9yg65QKwdo9oBRn/Ar6juiLXjGcFUMkJ1C3ieA78gsi3WDsvFoPpKrB2i2kbkvlR+ANrS7T7NvP9tVm/MEs7FwAKqe+Wxa8dHUctHUasx2CTfjkJQ1NseBtMAAAAASUVORK5CYII=" alt = "love" /> and React</div>
 								<div className="reach-outer">
 								<div className="reach">
-									<p>
-										<span onClick = {this.onClickMail}>MAIL</span>
-										<span className="tab"></span>
-										<span onClick = {this.onClickPhone}>PHONE</span>
-										<span className="tab"></span>
-										<span onClick = {this.onClickFacebook}>FACEBOOK</span>
-										<span className="tab"></span>
-										<span onClick = {this.onClickFacebook}>INSTAGRAM</span>
-										<span className="tab"></span>
-										<span onClick = {this.onClickLinkedin}>LINKEDIN</span>
+								<p>
+										<a className = "aL" href = "mailto: khatri.divyansh98@gmail.com">MAIL</a>
+										<span className="tabD"></span>
+										<a className = "aL" href = "https://www.facebook.com/divyansh43/">FACEBOOK</a>
+										<span className="tabD"></span>
+										<a className = "aL" href = "https://www.instagram.com/_divyanshkhatri_/?hl=bn">INSTAGRAM</a>
+										<span className="tabD"></span>
+										<a className = "aL" href = "https://www.linkedin.com/in/divyansh-khatri">LINKEDIN</a>
 									</p>
 								</div>
 								

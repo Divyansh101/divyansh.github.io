@@ -87,6 +87,28 @@
     /* border: 3px solid white; */
 }
 
+/* .yoyo {
+    font-size: 60px;
+    color: yellow;
+    position: absolute;
+
+} */
+
+.aD:link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.aD:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.aD:visited {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .innerTextD {
     position: absolute;
     font-size: 145px;
@@ -195,7 +217,7 @@
 
 .reachOuterD {
     position: absolute;
-    top: 12vh;
+    top: 24vh;
     right: 2vw;
 }
 

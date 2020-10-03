@@ -13,41 +13,13 @@ class Dark extends Component  {
 
 
 	state = {
-		show: true,
 		intro : true,
 		intro1 : null,
-		mailSecondValue: "khatri.divyansh98@gmail.com",
-		phoneSecondValue: "+917838774275",
-		facebookSecondValue: "https://www.facebook.com/divyansh43/",
-		linkedinSecondValue: "https://www.linkedin.com/in/divyansh-khatri",
 		bgColor: '#1a1a1a',
 	}
 
 
-	onClickFacebook = () => {
-		navigator.clipboard.writeText(this.state.facebookSecondValue);
-		console.log("Facebook");
-	}	
-		
-	onClickLinkedin = () => {
-		navigator.clipboard.writeText(this.state.linkedinSecondValue);
-		console.log("Linked In");
-	}
-	
-	
-	onClickMail = () => {
-		navigator.clipboard.writeText(this.state.mailSecondValue);
-		console.log("Mail");
-	}
-	
-	
-	onClickPhone = () => {
-		navigator.clipboard.writeText(this.state.phoneSecondValue);
-		console.log("Phone");
-	}
-
 	switchColors = () => {
-		// console.log("pressed");
 		localStorage.setItem("theme", false);
 		this.setState({intro1: <Light />})
 	}
@@ -88,15 +60,13 @@ class Dark extends Component  {
 								<div className="reachOuterD">
 								<div className="reachD">
 									<p>
-										<span onClick = {this.onClickMail}>MAIL</span>
+										<a className = "aD" href = "mailto: khatri.divyansh98@gmail.com">MAIL</a>
 										<span className="tabD"></span>
-										<span onClick = {this.onClickPhone}>PHONE</span>
+										<a className = "aD" href = "https://www.facebook.com/divyansh43/">FACEBOOK</a>
 										<span className="tabD"></span>
-										<span onClick = {this.onClickFacebook}>FACEBOOK</span>
+										<a className = "aD" href = "https://www.instagram.com/_divyanshkhatri_/?hl=bn">INSTAGRAM</a>
 										<span className="tabD"></span>
-										<span onClick = {this.onClickFacebook}>INSTAGRAM</span>
-										<span className="tabD"></span>
-										<span onClick = {this.onClickLinkedin}>LINKEDIN</span>
+										<a className = "aD" href = "https://www.linkedin.com/in/divyansh-khatri">LINKEDIN</a>
 									</p>
 								</div>
 								
@@ -128,7 +98,12 @@ class Dark extends Component  {
 
 		return (
 			<div>
-				{this.state.intro1 != null ? this.state.intro1 : intro}
+				{
+					this.state.intro1 != null ? this.state.intro1 : intro
+				}
+				{/* {
+					this.state.honey != null ? this.state.honey : null
+				}	 */}
 			</div>
 			
 		);
